@@ -31,6 +31,11 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
+    private void FixedUpdate()
+    {
+        DetectMovement();
+    }
+
     void DetectMovement()
     {
         myBody.velocity = new Vector3(Input.GetAxisRaw(Axis.HORIZONTAL_AXIS) * (-walk_Speed),
@@ -40,45 +45,3 @@ public class PlayerMovement : MonoBehaviour
 
 
 } //class
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
