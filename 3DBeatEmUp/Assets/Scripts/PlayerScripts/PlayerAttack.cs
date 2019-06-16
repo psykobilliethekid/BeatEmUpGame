@@ -48,13 +48,34 @@ public class PlayerAttack : MonoBehaviour
     // Combo Attacks
     void ComboAttacks()
     {
+        // Punch
         if(Input.GetKeyDown(KeyCode.Z))
         {
-            player_Anim.Punch_1();
+            current_Combo_State++;
+            activateTimerToReset = true;
+            current_Combo_Timer = default_Combo_Timer;
 
-            // 1:14:18
+            if(current_Combo_State == ComboState.PUNCH_1)
+            {
+                player_Anim.Punch_1();
+            }
+
+            if (current_Combo_State == ComboState.PUNCH_2)
+            {
+                player_Anim.Punch_2();
+            }
+
+            if (current_Combo_State == ComboState.PUNCH_3)
+            {
+                player_Anim.Punch_3();
+
+                //1:16:13
+            }
+
+
         }
 
+        // Kick
         if(Input.GetKeyDown(KeyCode.X))
         {
             player_Anim.Kick_1();
