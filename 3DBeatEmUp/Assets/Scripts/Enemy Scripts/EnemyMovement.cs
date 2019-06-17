@@ -63,21 +63,22 @@ public class EnemyMovement : MonoBehaviour
             myBody.velocity = transform.forward * speed;
 
             // Means the enemy is moving
-            if(myBody.velocity.sqrMagnitude != 0)
+            if (myBody.velocity.sqrMagnitude != 0)
             {
                 enemyAnim.Walk(true);
             }
 
-            else if (Vector3.Distance(transform.position, playerTarget.position) <= attack_Distance)
-            {
-                // Automatically stops enemy movement
-                myBody.velocity = Vector3.zero;
-                enemyAnim.Walk(false);
-
-                followPlayer = false;
-                attackPlayer = true;
-            }
         }
+        else if (Vector3.Distance(transform.position, playerTarget.position) <= attack_Distance)
+        {
+            // Automatically stops enemy movement
+            myBody.velocity = Vector3.zero;
+            enemyAnim.Walk(false);
+
+            followPlayer = false;
+            attackPlayer = true;
+        }
+
     }
 
     // Attack the player
@@ -93,7 +94,7 @@ public class EnemyMovement : MonoBehaviour
         if (current_Attack_Time > default_Attack_Time)
         {
             // Will return 0, 1, 2 for enemy attack
-            enemyAnim.EnemyAttack(Random.Range(0,3));
+            enemyAnim.EnemyAttack(Random.Range(0, 3));
 
             // Reset the current attack value
             current_Attack_Time = 0f;
@@ -106,7 +107,7 @@ public class EnemyMovement : MonoBehaviour
             attackPlayer = false;
             followPlayer = true;
 
-            // 2:14:40
+            // 2:14:40  
         }
     }
 }

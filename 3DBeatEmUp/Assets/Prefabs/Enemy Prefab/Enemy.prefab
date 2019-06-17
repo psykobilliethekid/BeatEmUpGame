@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 8482660676379663194}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,10 +145,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 763403a04be23234a8d2aa8c89949058, type: 2}
     - target: {fileID: 400002, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.49999967
@@ -165,6 +161,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.05504989
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 763403a04be23234a8d2aa8c89949058, type: 2}
     - target: {fileID: 13700000, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -181,18 +181,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.w
       value: -0.00030589628
       objectReference: {fileID: 0}
-    - target: {fileID: 400110, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 1.1764634
-      objectReference: {fileID: 0}
-    - target: {fileID: 400110, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -162.51314
-      objectReference: {fileID: 0}
-    - target: {fileID: 400110, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 176.93083
-      objectReference: {fileID: 0}
     - target: {fileID: 400112, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 12.976649
@@ -204,6 +192,18 @@ PrefabInstance:
     - target: {fileID: 400112, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 100.68135
+      objectReference: {fileID: 0}
+    - target: {fileID: 400110, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 1.1764634
+      objectReference: {fileID: 0}
+    - target: {fileID: 400110, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -162.51314
+      objectReference: {fileID: 0}
+    - target: {fileID: 400110, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 176.93083
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
