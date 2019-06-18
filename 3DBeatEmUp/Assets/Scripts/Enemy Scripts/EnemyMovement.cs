@@ -107,7 +107,7 @@ public class EnemyMovement : MonoBehaviour
             attackPlayer = false;
             followPlayer = true;
 
-            // 2:14:40  
+            // 2:20:00  
         }
     }
 }
