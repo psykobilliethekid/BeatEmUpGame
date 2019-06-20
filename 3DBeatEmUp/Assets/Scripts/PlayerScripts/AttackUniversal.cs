@@ -23,5 +23,10 @@ public class AttackUniversal : MonoBehaviour
     void DetectCollision()
     {
         Collider[] hit = Physics.OverlapSphere(transform.position, radius, collisionLayer);
+
+        if(hit.Length > 0)
+        {
+            print("We hit this " + hit[0].gameObject.name);
+        }
     }
 } //class
