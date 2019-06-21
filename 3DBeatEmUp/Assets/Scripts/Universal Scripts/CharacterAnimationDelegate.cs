@@ -17,6 +17,8 @@ public class CharacterAnimationDelegate : MonoBehaviour
 
     private EnemyMovement enemy_Movement;
 
+    private ShakeCamera shakeCamera;
+
     void Awake()
     {
         animationScript = GetComponent<CharacterAnimation>();
@@ -27,6 +29,8 @@ public class CharacterAnimationDelegate : MonoBehaviour
         {
             enemy_Movement = GetComponentInParent<EnemyMovement>();
         }
+
+        shakeCamera = GameObject.FindWithTag(Tags.MAIN_CAMERA_TAG).GetComponent<ShakeCamera>();
     }
 
     void Left_Arm_Attack_On()
@@ -156,6 +160,11 @@ public class CharacterAnimationDelegate : MonoBehaviour
 
         // Sets enemy parent to the enemy layer
         transform.parent.gameObject.layer = 9;
+    }
+
+    void ShakeCameraOnFall()
+    {
+        shakeCamera.ShouldShake = true;
     }
 
 } // class
