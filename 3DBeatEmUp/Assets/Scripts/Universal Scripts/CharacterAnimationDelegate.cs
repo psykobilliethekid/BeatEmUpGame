@@ -112,4 +112,33 @@ public class CharacterAnimationDelegate : MonoBehaviour
         animationScript.StandUp();
     }
 
+    // Play attack sound
+    public void Attack_FX_Sound()
+    {
+        audioSource.volume = 0.2f;
+        audioSource.clip = whoosh_Sound;
+        audioSource.Play();
+    }
+
+    void CharacterDiedSound()
+    {
+        audioSource.volume = 1f;
+        audioSource.clip = dead_Sound;
+        audioSource.Play();
+    }
+
+    void Enemy_KnockedDown()
+    {
+        audioSource.clip = fall_Sound;
+        audioSource.Play();
+    }
+
+    void Enemy_HitGround()
+    {
+        audioSource.clip = ground_Hit_Sound;
+        audioSource.Play();
+
+        // 3:35:59
+    }
+
 } // class
