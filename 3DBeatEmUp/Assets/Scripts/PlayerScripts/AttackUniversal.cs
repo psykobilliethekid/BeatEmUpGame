@@ -30,21 +30,24 @@ public class AttackUniversal : MonoBehaviour
            // If the player made the hit
            if(is_Player)
             {
-                // Get the position of the enemy and spawn hit effect
+                // Spawn hit effect
                 Vector3 hitFX_Pos = hit[0].transform.position;
                 hitFX_Pos.y += 1.3f;
 
                 // If facing the right side
                 if(hit[0].transform.forward.x > 0)
                 {
+                    // Show effect in front of enemy
                     hitFX_Pos.x += 0.3f;
                 }
                 // If facing the left side
                 else if (hit[0].transform.forward.x < 0)
                 {
+                    // Show effect in front of enemy
                     hitFX_Pos.x -= 0.3f;
                 }
 
+                // Show hit effect at the position of the enemy
                 Instantiate(hit_FX_Prefab, hitFX_Pos, Quaternion.identity);
             }
 
