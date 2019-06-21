@@ -24,9 +24,12 @@ public class AttackUniversal : MonoBehaviour
     {
         Collider[] hit = Physics.OverlapSphere(transform.position, radius, collisionLayer);
 
+        // If there is a hit
         if(hit.Length > 0)
         {
             print("We hit this " + hit[0].gameObject.name);
+
+            gameObject.SetActive(false);
         }
     }
 } //class
