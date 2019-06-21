@@ -228,10 +228,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddac0bed499cf204c87b18828e885271, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  left_Arm_Attack_Point: {fileID: 0}
-  right_Arm_Attack_Point: {fileID: 0}
-  left_Leg_Attack_Point: {fileID: 0}
-  right_Leg_Attack_Point: {fileID: 0}
+  left_Arm_Attack_Point: {fileID: 1877404848}
+  right_Arm_Attack_Point: {fileID: 1266652619}
+  left_Leg_Attack_Point: {fileID: 502153821}
+  right_Leg_Attack_Point: {fileID: 607032274}
 --- !u!1 &627089098231382009
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,27 +340,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400106, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.00010898929
+      value: 0.00008555213
       objectReference: {fileID: 0}
     - target: {fileID: 400114, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.00006042432
+      value: 2.3204763
       objectReference: {fileID: 0}
     - target: {fileID: 400114, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -179.99998
+      value: 178.3268
       objectReference: {fileID: 0}
     - target: {fileID: 400114, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 47.409267
+      value: 49.34828
       objectReference: {fileID: 0}
     - target: {fileID: 400112, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
+      value: 89.98021
       objectReference: {fileID: 0}
     - target: {fileID: 400112, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -0.00016008283
+      value: -0.00015842094
       objectReference: {fileID: 0}
     - target: {fileID: 400120, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -368,7 +368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400120, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.00010898929
+      value: 0.00008555213
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalRotation.y
@@ -388,15 +388,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400116, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -1.689053e-13
+      value: 9.285625
       objectReference: {fileID: 0}
     - target: {fileID: 400116, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -2.9604693e-13
+      value: 28.252403
       objectReference: {fileID: 0}
     - target: {fileID: 400116, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -39.078133
+      value: -16.754892
       objectReference: {fileID: 0}
     - target: {fileID: 400110, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -444,15 +444,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400118, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 5.744478e-13
+      value: 4.418105
       objectReference: {fileID: 0}
     - target: {fileID: 400118, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -1.0649337e-13
+      value: 24.631252
       objectReference: {fileID: 0}
     - target: {fileID: 400118, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -10.502484
+      value: -9.537463
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_Controller

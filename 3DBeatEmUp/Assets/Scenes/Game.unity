@@ -120,18 +120,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &502153821 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 502153821, guid: 081dbd9695020834bb96551be6f1f38c,
-    type: 3}
-  m_PrefabInstance: {fileID: 627089098629249500}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &607032274 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 607032274, guid: 081dbd9695020834bb96551be6f1f38c,
-    type: 3}
-  m_PrefabInstance: {fileID: 627089098629249500}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,18 +412,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce916a468cbb4446cb2369b31146137c, type: 3}
---- !u!1 &1266652619 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1266652619, guid: 081dbd9695020834bb96551be6f1f38c,
-    type: 3}
-  m_PrefabInstance: {fileID: 627089098629249500}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1877404848 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1877404848, guid: 081dbd9695020834bb96551be6f1f38c,
-    type: 3}
-  m_PrefabInstance: {fileID: 627089098629249500}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &627089098629249500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -503,26 +479,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2810948484446996229, guid: 081dbd9695020834bb96551be6f1f38c,
-        type: 3}
-      propertyPath: left_Arm_Attack_Point
-      value: 
-      objectReference: {fileID: 1877404848}
-    - target: {fileID: 2810948484446996229, guid: 081dbd9695020834bb96551be6f1f38c,
-        type: 3}
-      propertyPath: right_Arm_Attack_Point
-      value: 
-      objectReference: {fileID: 1266652619}
-    - target: {fileID: 2810948484446996229, guid: 081dbd9695020834bb96551be6f1f38c,
-        type: 3}
-      propertyPath: left_Leg_Attack_Point
-      value: 
-      objectReference: {fileID: 502153821}
-    - target: {fileID: 2810948484446996229, guid: 081dbd9695020834bb96551be6f1f38c,
-        type: 3}
-      propertyPath: right_Leg_Attack_Point
-      value: 
-      objectReference: {fileID: 607032274}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 081dbd9695020834bb96551be6f1f38c, type: 3}
 --- !u!1001 &647336549024435051
@@ -590,6 +546,11 @@ PrefabInstance:
     - target: {fileID: 5146060889323665157, guid: e62d9d6e13b556c48a11839d83f879fb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8482660676379663194, guid: e62d9d6e13b556c48a11839d83f879fb,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
