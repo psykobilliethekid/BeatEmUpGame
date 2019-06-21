@@ -52,10 +52,10 @@ public class AttackUniversal : MonoBehaviour
 
                 // Deal damage
                 if(gameObject.CompareTag(Tags.LEFT_ARM_TAG) || gameObject.CompareTag(Tags.LEFT_LEG_TAG)) {
-                    //hit[0].GetComponent<HealthScript>().ApplyDamage(damage, true);
+                    hit[0].GetComponent<HealthScript>().ApplyDamage(damage, true);
                 } else
                 {
-                    //hit[0].GetComponent<HealthScript>().ApplyDamage(damage, false);
+                    hit[0].GetComponent<HealthScript>().ApplyDamage(damage, false);
 
                 }
             }

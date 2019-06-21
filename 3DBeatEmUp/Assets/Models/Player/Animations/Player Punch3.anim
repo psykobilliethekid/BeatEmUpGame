@@ -26623,7 +26623,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: 
+    functionName: TagLeft_Arm
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -26638,6 +26638,13 @@ AnimationClip:
     messageOptions: 0
   - time: 0.23333333
     functionName: Left_Arm_Attack_Off
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.26666668
+    functionName: UnTagLeft_Arm
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
