@@ -25,6 +25,7 @@ public class HealthScript : MonoBehaviour
         if (characterDied)
             return;
 
+        // Applying health damage
         health -= damage;
 
         //display health UI

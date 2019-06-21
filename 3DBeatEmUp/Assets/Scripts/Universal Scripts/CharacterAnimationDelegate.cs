@@ -6,6 +6,29 @@ public class CharacterAnimationDelegate : MonoBehaviour
 {
     public GameObject left_Arm_Attack_Point, right_Arm_Attack_Point, left_Leg_Attack_Point, right_Leg_Attack_Point;
 
+    public float stand_Up_Timer = 2f;
+
+    private CharacterAnimation animationScript;
+
+    private AudioSource audioSource;
+
+    [SerializeField]
+    private AudioClip whoosh_Sound, fall_Sound, ground_Hit_Sound, dead_Sound;
+
+    private EnemyMovement enemy_Movement;
+
+    void Awake()
+    {
+        animationScript = GetComponent<CharacterAnimation>();
+
+        audioSource = GetComponent<AudioSource>();
+
+        if(gameObject.CompareTag(Tags.ENEMY_TAG))
+        {
+            enemy_Movement = GetComponentInParent<EnemyMovement>();
+        }
+    }
+
     void Left_Arm_Attack_On()
     {
         left_Arm_Attack_Point.SetActive(true);
@@ -76,6 +99,17 @@ public class CharacterAnimationDelegate : MonoBehaviour
     void UnTagLeft_Leg()
     {
         left_Leg_Attack_Point.tag = Tags.UNTAGGED_TAG;
+    }
+
+    void Enemy_StandUp()
+    {
+        StartCoroutine(StandUpAfterTime());
+    }
+
+    IEnumerator StandUpAfterTime()
+    {
+        yield return new WaitForSeconds(stand_Up_Timer);
+        animationScript.StandUp();
     }
 
 } // class

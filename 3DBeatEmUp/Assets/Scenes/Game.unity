@@ -479,36 +479,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 627089097568065875, guid: 081dbd9695020834bb96551be6f1f38c,
+    - target: {fileID: 627089097568486570, guid: 081dbd9695020834bb96551be6f1f38c,
         type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -1.5438554e-13
-      objectReference: {fileID: 0}
-    - target: {fileID: 627089097568065875, guid: 081dbd9695020834bb96551be6f1f38c,
+      propertyPath: whoosh_Sound
+      value: 
+      objectReference: {fileID: 8300000, guid: 51da2284f82ba58478bfebaa5761293c, type: 3}
+    - target: {fileID: 627089097568486570, guid: 081dbd9695020834bb96551be6f1f38c,
         type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -3.0113284e-13
-      objectReference: {fileID: 0}
-    - target: {fileID: 627089097568065875, guid: 081dbd9695020834bb96551be6f1f38c,
+      propertyPath: fall_Sound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4e37c84993f923149928fdc36eed0ea1, type: 3}
+    - target: {fileID: 627089097568486570, guid: 081dbd9695020834bb96551be6f1f38c,
         type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -33.220596
-      objectReference: {fileID: 0}
-    - target: {fileID: 627089097568065873, guid: 081dbd9695020834bb96551be6f1f38c,
+      propertyPath: ground_Hit_Sound
+      value: 
+      objectReference: {fileID: 8300000, guid: e911a01d2f30f014b880cca9b0ba7901, type: 3}
+    - target: {fileID: 627089097568486570, guid: 081dbd9695020834bb96551be6f1f38c,
         type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 5.749986e-13
-      objectReference: {fileID: 0}
-    - target: {fileID: 627089097568065873, guid: 081dbd9695020834bb96551be6f1f38c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -8.329493e-14
-      objectReference: {fileID: 0}
-    - target: {fileID: 627089097568065873, guid: 081dbd9695020834bb96551be6f1f38c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -5.4509
-      objectReference: {fileID: 0}
+      propertyPath: dead_Sound
+      value: 
+      objectReference: {fileID: 8300000, guid: 56584c6309f079b48a35335624f5f7b5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 081dbd9695020834bb96551be6f1f38c, type: 3}
 --- !u!1001 &647336549024435051
@@ -578,5 +568,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2438777595312922107, guid: e62d9d6e13b556c48a11839d83f879fb,
+        type: 3}
+      propertyPath: whoosh_Sound
+      value: 
+      objectReference: {fileID: 8300000, guid: 51da2284f82ba58478bfebaa5761293c, type: 3}
+    - target: {fileID: 2438777595312922107, guid: e62d9d6e13b556c48a11839d83f879fb,
+        type: 3}
+      propertyPath: fall_Sound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4e37c84993f923149928fdc36eed0ea1, type: 3}
+    - target: {fileID: 2438777595312922107, guid: e62d9d6e13b556c48a11839d83f879fb,
+        type: 3}
+      propertyPath: ground_Hit_Sound
+      value: 
+      objectReference: {fileID: 8300000, guid: e911a01d2f30f014b880cca9b0ba7901, type: 3}
+    - target: {fileID: 2438777595312922107, guid: e62d9d6e13b556c48a11839d83f879fb,
+        type: 3}
+      propertyPath: dead_Sound
+      value: 
+      objectReference: {fileID: 8300000, guid: 56584c6309f079b48a35335624f5f7b5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e62d9d6e13b556c48a11839d83f879fb, type: 3}
