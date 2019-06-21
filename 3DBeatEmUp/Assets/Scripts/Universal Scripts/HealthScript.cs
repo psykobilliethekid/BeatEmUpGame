@@ -7,7 +7,7 @@ public class HealthScript : MonoBehaviour
     public float health = 100f;
 
     private CharacterAnimation animationScript;
-    private EnemyMovment enemyMovement;
+    private EnemyMovement enemyMovement;
 
     private bool characterDied;
 
