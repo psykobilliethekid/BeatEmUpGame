@@ -137,8 +137,25 @@ public class CharacterAnimationDelegate : MonoBehaviour
     {
         audioSource.clip = ground_Hit_Sound;
         audioSource.Play();
+    }
 
-        // 3:35:59
+    // Stops Enemy from instantly getting up after being knocked down
+    void DisableMovement()
+    {
+        enemy_Movement.enabled = false;
+
+        // Makes it so the Player can't hit enemy while on the ground
+        // Sets enemy parent to the default layer
+        transform.parent.gameObject.layer = 0;
+    }
+
+    // Enables Enemy movement after delay timer hits 2sec
+    void EnableMovement()
+    {
+        enemy_Movement.enabled = true;
+
+        // Sets enemy parent to the enemy layer
+        transform.parent.gameObject.layer = 9;
     }
 
 } // class

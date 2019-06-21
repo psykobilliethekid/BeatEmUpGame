@@ -1,38 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &647336549048291837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647336549048291836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6890656fcf5e0ee4898244144d5ab587, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2438777595312922107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647336549048291836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddac0bed499cf204c87b18828e885271, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  left_Arm_Attack_Point: {fileID: 0}
-  right_Arm_Attack_Point: {fileID: 0}
-  left_Leg_Attack_Point: {fileID: 0}
-  right_Leg_Attack_Point: {fileID: 0}
-  stand_Up_Timer: 2
-  whoosh_Sound: []
-  fall_Sound: []
-  ground_Hit_Sound: []
-  dead_Sound: []
 --- !u!82 &9114742376298251278
 AudioSource:
   m_ObjectHideFlags: 0
@@ -129,6 +96,39 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &647336549048291837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647336549048291836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6890656fcf5e0ee4898244144d5ab587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2438777595312922107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647336549048291836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddac0bed499cf204c87b18828e885271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left_Arm_Attack_Point: {fileID: 0}
+  right_Arm_Attack_Point: {fileID: 0}
+  left_Leg_Attack_Point: {fileID: 0}
+  right_Leg_Attack_Point: {fileID: 0}
+  stand_Up_Timer: 2
+  whoosh_Sound: {fileID: 8300000, guid: 51da2284f82ba58478bfebaa5761293c, type: 3}
+  fall_Sound: {fileID: 8300000, guid: 4e37c84993f923149928fdc36eed0ea1, type: 3}
+  ground_Hit_Sound: {fileID: 8300000, guid: e911a01d2f30f014b880cca9b0ba7901, type: 3}
+  dead_Sound: {fileID: 8300000, guid: 56584c6309f079b48a35335624f5f7b5, type: 3}
 --- !u!1 &8080138547205426221
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,6 +232,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
       propertyPath: m_Name
       value: Enemy Child
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 87886e989f329e84fbd053fbcaff4f6b, type: 3}
       propertyPath: m_LocalPosition.x
