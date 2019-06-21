@@ -10,7 +10,7 @@ public class AttackUniversal : MonoBehaviour
 
     public bool is_Player, is_Enemy;
 
-    public GameObject hit_FX;
+    public GameObject hit_FX_Prefab;
 
 
     void Update()
@@ -27,8 +27,28 @@ public class AttackUniversal : MonoBehaviour
         // If there is a hit
         if(hit.Length > 0)
         {
-            print("We hit this " + hit[0].gameObject.name);
+           // If the player made the hit
+           if(is_Player)
+            {
+                // Get the position of the enemy and spawn hit effect
+                Vector3 hitFX_Pos = hit[0].transform.position;
+                hitFX_Pos.y += 1.3f;
 
+                // If facing the right side
+                if(hit[0].transform.forward.x > 0)
+                {
+                    hitFX_Pos.x += 0.3f;
+                }
+                // If facing the left side
+                else if (hit[0].transform.forward.x < 0)
+                {
+                    hitFX_Pos.x -= 0.3f;
+                }
+
+                Instantiate(hit_FX_Prefab, hitFX_Pos, Quaternion.identity);
+            }
+
+           // Deactivate the game object that hit
             gameObject.SetActive(false);
         }
     }
