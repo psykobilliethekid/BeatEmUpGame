@@ -167,4 +167,6 @@ public class CharacterAnimationDelegate : MonoBehaviour
         shakeCamera.ShouldShake = true;
     }
 
+    // 3:57:32
+
 } // class
