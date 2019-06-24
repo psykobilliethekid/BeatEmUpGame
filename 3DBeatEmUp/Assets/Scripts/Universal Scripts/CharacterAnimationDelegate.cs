@@ -179,7 +179,7 @@ public class CharacterAnimationDelegate : MonoBehaviour
     void DeactivateGameObject()
     {
         // Spawns enemy when one dies
-        //EnemyManager.instance.SpawnEnemy();
+        EnemyManager.instance.SpawnEnemy();
         gameObject.SetActive(false);
     }
     
