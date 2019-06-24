@@ -40,9 +40,10 @@ public class HealthScript : MonoBehaviour
             characterDied = true;
 
             // If it's the player deactivate the enemy script
+            // so the enemy stops trying to fight
             if(is_Player)
             {
-
+                GameObject.FindWithTag(Tags.ENEMY_TAG).GetComponent<EnemyMovement>().enabled = false;
             }
 
             return;
