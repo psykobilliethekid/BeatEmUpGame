@@ -162,11 +162,26 @@ public class CharacterAnimationDelegate : MonoBehaviour
         transform.parent.gameObject.layer = 9;
     }
 
+    // Shake camera when character falls to the ground
     void ShakeCameraOnFall()
     {
         shakeCamera.ShouldShake = true;
     }
 
-    // 3:57:32
+    // When Enemy dies (need to set up for player)
+    void CharacterDied()
+    {
+        Invoke("DeactivateGameObject", 2f);
+    }
+
+
+    // Deactivate Enemy Game Object
+    void DeactivateGameObject()
+    {
+        // Spawns enemy when one dies
+        //EnemyManager.instance.SpawnEnemy();
+        gameObject.SetActive(false);
+    }
+    
 
 } // class
