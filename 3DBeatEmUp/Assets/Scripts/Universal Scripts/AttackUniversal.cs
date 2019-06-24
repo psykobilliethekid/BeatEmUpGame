@@ -60,6 +60,13 @@ public class AttackUniversal : MonoBehaviour
                 }
             }
 
+
+           // If the enemy made the hit
+           if(is_Enemy)
+            {
+                hit[0].GetComponent<HealthScript>().ApplyDamage(damage, false);
+            }
+
            // Deactivate the game object that hit
             gameObject.SetActive(false);
         }
