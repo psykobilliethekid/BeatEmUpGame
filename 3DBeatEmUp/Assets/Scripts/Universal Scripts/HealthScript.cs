@@ -13,9 +13,13 @@ public class HealthScript : MonoBehaviour
 
     public bool is_Player;
 
+    private HealthUI health_UI;
+
     void Awake()
     {
         animationScript = GetComponentInChildren<CharacterAnimation>();
+
+        health_UI = GetComponent<HealthUI>();
     }
 
 
@@ -29,6 +33,10 @@ public class HealthScript : MonoBehaviour
         health -= damage;
 
         //display health UI
+        if(is_Player)
+        {
+            health_UI.DisplayHealth(health);
+        }
 
         // If character has died
         if(health <= 0f)
