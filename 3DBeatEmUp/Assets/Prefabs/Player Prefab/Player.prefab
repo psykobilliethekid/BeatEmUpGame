@@ -47,7 +47,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   radius: 1
-  damage: 2
+  damage: 5
   is_Player: 1
   is_Enemy: 0
   hit_FX_Prefab: {fileID: 115594, guid: efd3011863918584d94591e177fa8d29, type: 3}
@@ -98,7 +98,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   radius: 1
-  damage: 2
+  damage: 5
   is_Player: 1
   is_Enemy: 0
   hit_FX_Prefab: {fileID: 115594, guid: efd3011863918584d94591e177fa8d29, type: 3}
@@ -149,7 +149,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   radius: 1
-  damage: 2
+  damage: 5
   is_Player: 1
   is_Enemy: 0
   hit_FX_Prefab: {fileID: 115594, guid: efd3011863918584d94591e177fa8d29, type: 3}
@@ -204,39 +204,6 @@ MonoBehaviour:
   is_Player: 1
   is_Enemy: 0
   hit_FX_Prefab: {fileID: 115594, guid: efd3011863918584d94591e177fa8d29, type: 3}
---- !u!114 &627089097568486570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627089097568486569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddac0bed499cf204c87b18828e885271, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  left_Arm_Attack_Point: {fileID: 1877404848}
-  right_Arm_Attack_Point: {fileID: 1266652619}
-  left_Leg_Attack_Point: {fileID: 502153821}
-  right_Leg_Attack_Point: {fileID: 607032274}
-  stand_Up_Timer: 2
-  whoosh_Sound: []
-  fall_Sound: []
-  ground_Hit_Sound: []
-  dead_Sound: []
---- !u!114 &627089097568486571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627089097568486569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6890656fcf5e0ee4898244144d5ab587, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &7917541571661499216
 AudioSource:
   m_ObjectHideFlags: 0
@@ -333,6 +300,39 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &627089097568486570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627089097568486569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddac0bed499cf204c87b18828e885271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left_Arm_Attack_Point: {fileID: 1877404848}
+  right_Arm_Attack_Point: {fileID: 1266652619}
+  left_Leg_Attack_Point: {fileID: 502153821}
+  right_Leg_Attack_Point: {fileID: 607032274}
+  stand_Up_Timer: 2
+  whoosh_Sound: {fileID: 8300000, guid: 51da2284f82ba58478bfebaa5761293c, type: 3}
+  fall_Sound: {fileID: 8300000, guid: 4e37c84993f923149928fdc36eed0ea1, type: 3}
+  ground_Hit_Sound: {fileID: 8300000, guid: e911a01d2f30f014b880cca9b0ba7901, type: 3}
+  dead_Sound: {fileID: 8300000, guid: 56584c6309f079b48a35335624f5f7b5, type: 3}
+--- !u!114 &627089097568486571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627089097568486569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6890656fcf5e0ee4898244144d5ab587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &627089098231382009
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,27 +528,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400106, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.00008433658
+      value: 0.000086403015
       objectReference: {fileID: 0}
     - target: {fileID: 400114, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.00007863538
+      value: 2.3410788
       objectReference: {fileID: 0}
     - target: {fileID: 400114, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -179.99991
+      value: 84.51239
       objectReference: {fileID: 0}
     - target: {fileID: 400114, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 47.409298
+      value: 47.357124
       objectReference: {fileID: 0}
     - target: {fileID: 400112, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 89.98021
+      value: 89.98022
       objectReference: {fileID: 0}
     - target: {fileID: 400112, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -0.00015960254
+      value: -0.00015759381
       objectReference: {fileID: 0}
     - target: {fileID: 400120, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -556,31 +556,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400120, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.00008433658
+      value: 0.000086403015
       objectReference: {fileID: 0}
     - target: {fileID: 400116, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -0
+      value: -4.4735827
       objectReference: {fileID: 0}
     - target: {fileID: 400116, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -0
+      value: -13.074449
       objectReference: {fileID: 0}
     - target: {fileID: 400116, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -34.0781
+      value: -18.565195
       objectReference: {fileID: 0}
     - target: {fileID: 400118, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.0000000031320686
+      value: -4.281806
       objectReference: {fileID: 0}
     - target: {fileID: 400118, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.00000021766084
+      value: -23.826723
       objectReference: {fileID: 0}
     - target: {fileID: 400118, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -10.502483
+      value: -9.633682
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
